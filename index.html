@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project | Content Progress Card</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/less" href="style.less">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/less@4" ></script>
+        
+    </head>
+    <body>
+        <main>
+            <div class="progress-wrap">
+                <div class="progress-tracker">
+                    <div class="progress-tracker-content">
+                        <span id="percent">0%</span>
+                        <p>Content progress</p>
+                    </div>
+                    <div class="progress-fill">
+                        <div class="donut" style="--p:0; opacity: 0;"></div>
+                    </div>
+                </div>
+                <div class="step-tracker">
+                    <h1>Curriculum</h1>
+                    <label for="chapter-one">
+                        <div class="step-wrap">
+                            <input type="checkbox" id="chapter-one" name="chapter-one" value="chapter-one" class="chapter-check">
+                            <span class="label">Chapter 1</span>
+                            <p>Introduction</p>
+                        </div>
+                    </label>
+                    <label for="chapter-two" class="is--locked">
+                        <div class="step-wrap">
+                            <input type="checkbox" id="chapter-two" name="chapter-two" value="chapter-two">
+                            <span class="label">Chapter 2</span>
+                            <p>Information architecture</p>
+                        </div>
+                    </label>
+                    <label for="chapter-three" class="is--locked">
+                        <div class="step-wrap">
+                            <input type="checkbox" id="chapter-three" name="chapter-three" value="chapter-three">
+                            <span class="label">Chapter 3</span>
+                            <p>Data and Security</p>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </main>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="script.js" crossorigin="anonymous"></script>
+    </body>
+</html>
